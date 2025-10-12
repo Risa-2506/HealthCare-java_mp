@@ -141,24 +141,24 @@ color: #444444;
 .photo,.photo_2,.photo_3{
     width: 70px;
     height: 70px;
-    background-image: url('healtg_logo.jpg'); 
+    background-image: url('../images/healtg_logo.jpg'); 
     background-size: cover;   
     background-position: center; 
     background-repeat: no-repeat; 
 }
 
 .photo_2{
-    background-image: url(medical_logo.jpg);
+    background-image: url(../images/medical_logo.jpg);
 }
 #item1{
-    background-image: url(certified.jpg);
+    background-image: url(../images/certified.jpg);
 }
 #item2{
-    background-image: url(rating.png);
+    background-image: url(../images/rating.png);
 }
 #item3{
-    background-image: url(human.jpg);
+    background-image: url(../images/human.jpg);
 }
 #item4{
-    background-image: url(locations.jpg);
+    background-image: url(../images/locations.jpg);
 }
