@@ -5,7 +5,7 @@
     "specialization": "Cardiologist",
     "experience": "10 years",
     "contact": "meera@hospital.com",
-    "image": "doc1.webp"
+    "image": "images/doc1.webp"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "specialization": "Dermatologist",
     "experience": "8 years",
     "contact": "rajesh@hospital.com",
-    "image": "doc2.webp"
+    "image": "images/doc2.webp"
   },
   {
     "id": 3,
@@ -21,24 +21,24 @@
     "specialization": "Ophthalmologist",
     "experience": "6 years",
     "contact": "ananya@hospital.com",
-    "image": "doc3.webp"
+    "image": "images/doc3.webp"
   },
   {
     "name": "Dr. Karan Patel",
     "specialization": "Gastroenterology",
     "experience": "9 years",
-    "image": "doc4.webp"
+    "image": "images/doc4.webp"
   },
   {
     "name": "Dr. Sneha Reddy",
     "specialization": "Dermatologist",
     "experience": "7 years",
-    "image": "doc5.webp"
+    "image": "images/doc5.webp"
   },
   {
     "name": "Dr. Anil Verma",
     "specialization": "ENT Specialist",
     "experience": "11 years",
-    "image": "doc6.png"
+    "image": "images/doc6.png"
   }
 ]
