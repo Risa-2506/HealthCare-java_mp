@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment | Hospital Website</title>
+  <link rel="stylesheet" href="styles/doctor.css">
+</head>
+<body>
+  <section class="appointment-page">
+    <h2>BOOK AN APPOINTMENT</h2>
+
+    <form id="appointmentForm" class="appointment-form">
+      <label>Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Select Doctor:</label>
+      <select id="doctor" required>
+        <option value="Dr. Meera Sharma">Dr. Meera Sharma</option>
+        <option value="Dr. Rajesh Kumar">Dr. Rajesh Kumar</option>
+        <option value="Dr. Ananya Desai">Dr. Ananya Desai</option>
+      </select>
+
+      <label>Date:</label>
+      <input type="date" id="date" required>
+
+      <label>Time:</label>
+      <input type="time" id="time" required>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </section>
+
+  <script>
+    document.getElementById("appointmentForm").addEventListener("submit", function(e){
+      e.preventDefault(); // prevent page reload
+
+      const name = document.getElementById("name").value;
+      const doctor = document.getElementById("doctor").value;
+      const date = document.getElementById("date").value;
+      const time = document.getElementById("time").value;
+
+      // Display confirmation message
+      document.getElementById("result").innerHTML = `
+        <h3>Appointment Confirmed!</h3>
+      `;
+
+      // Reset the form
+      document.getElementById("appointmentForm").reset();
+    });
+  </script>
+</body>
+</html>
