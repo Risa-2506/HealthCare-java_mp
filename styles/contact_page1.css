@@ -11,13 +11,23 @@ body {
   margin: auto;
 }
 
+/* ✅ Responsive behavior */
+@media (max-width: 1100px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Left Section - Form */
 .contact-form {
   background: #fff;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  max-width: 100%;
+  
 }
+
 
 .contact-form h2 {
   margin-bottom: 0.5rem;
@@ -85,6 +95,7 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
 
 .info-box {
@@ -203,4 +214,46 @@ p{
     font-size: 20px; 
     margin-top: 10px;
     color: gray; 
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* When screen below 900px → stack vertically */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* When screen below 600px → reduce padding and fix overflow */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .form-row {
+    flex-direction: column; /* stack input fields */
+    gap: 0.5rem;
+  }
+
+  input, select, textarea {
+    width: 100%;
+  }
 }

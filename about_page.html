@@ -5,14 +5,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles/header.css">
 </head>
 
 <body>
-    <div class="description">
-        <div>
-            About Health-verse
+    <div class="header">
+      <div class="left-section">
+        HealthCare+
+      </div>
+      <div class="middle-section">
+        <a href="index.html" class="Home">
+          Home
+        </a>
+        <a href="about_page.html" class="About">
+          About
+        </a>
+        <a href="service.html" class="Services">
+          Services
+        </a>
+        <a href="doctor.html" class="Doctors">
+          Doctors
+        </a>
+        <a href="appointment.html" class="Appointment">
+          Appointment
+        </a>
+        <a href="contact_page.html" class="Contact">
+          Contact
+        </a>
+      </div>
+      <div class="right-section">
+        <a href="login.html" class="login">
+          Login
+        </a>
+        <a href="register.html" class="register">
+          Register
+        </a>
+        <div class="hamburger">
+          <img src="images/hamburger-menu.png" class="hamburger-img">
         </div>
+        <div class="dropdown-link">
+          <div class="links">
+            <a href="index.html" class="index-drop">Home</a>
+            <a href="about_page.html" class="about-drop">About us</a>
+            <a href="service.html"class="service-drop">Services</a>
+            <a href="doctor.html" class="doctor-drop">Doctor</a>
+            <a href="appointment.html"class="appointment-drop">Appointment</a>
+            <a href="contact_page.html" class="contact-drop">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="description">
         <div>
             <div class="para">Committed to your health and wellness</div>
             <p>We are here to provide you with utmost care opening the doors for the best services , working for
@@ -169,6 +213,30 @@
             </div>
         </div>
     </div>
+    <script>
+      // Get current file name (e.g. "about_page.html")
+      const currentPage = window.location.pathname.split("/").pop();
+
+      // Get all nav links
+      const links = document.querySelectorAll(".links a");
+
+      // Loop through and add 'active' to the matching one
+      links.forEach(link => 
+      {
+        if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+        }
+      });
+      hamburger=document.querySelector('.hamburger-img');
+      dropdown=document.querySelector('.links');
+      dropdown2=document.querySelector('.dropdown-link');
+      hamburger.addEventListener('click',() =>
+      {
+        dropdown.classList.toggle('show');
+        dropdown2.classList.toggle('show'); /* classList is a built in function..it has properties like add remove a class..toggle*/
+      });
+
+    </script>
 </body>
 
 </html>
