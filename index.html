@@ -5,6 +5,7 @@
       Home page
     </title>
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
     <div class="header">
@@ -53,6 +54,21 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="info">
+        <div class="info-details">
+          <p class="title1">Comprehensive</p>
+          <p class="title2">Healthcare Services</p>
+          <p class="details">Experience world-class medical care with our team of expert doctors, state-of-the-art facilities, and patient-centered approach to healthcare.</p>
+          <button class="app-btn" onclick="window.location.href='appointment.html'">Book Appointment</button>
+          <button class="contact-btn" onclick="window.location.href='contact_page.html'">Contact Us</button>
+        </div>
+        <div class="info-img">
+          <img src="images/healthcare.jpg" class="image">
+        </div>
+      </div>
+      
+    </div>
     <script>
       // Get current file name (e.g. "about_page.html")
       const currentPage = window.location.pathname.split("/").pop();
@@ -77,6 +93,5 @@
       });
 
     </script>
-
   </body>
 </html>
