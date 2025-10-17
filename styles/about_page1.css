@@ -117,10 +117,11 @@ p{
     line-height: 1.6;
 display: flex;
 justify-content: center;
-color: #444444; 
+color: #5f5e5e; 
   padding: 10px 15px;
   border-radius: 8px;
 }
+
 .first_line{
     color: black;
     font-weight: bold;
