@@ -71,6 +71,12 @@ body {
   background-color: #fafafa;
   color: #333;
 }
+.icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
 @media (max-width: 1300px) {
   .info{
     flex-direction: row;
