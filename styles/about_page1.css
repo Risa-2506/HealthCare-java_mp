@@ -54,7 +54,7 @@ h3
 .level4_boxes,
 .level5_boxes,
 .level6_boxes {
-    padding-top: 50px;
+    padding-top: 0px;
 
     display: flex;
 
