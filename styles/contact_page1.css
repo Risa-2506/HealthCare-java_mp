@@ -164,10 +164,15 @@ textarea {
 }
 
 #level2_boxes,.question_container{
-    padding-top: 50px;
+    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+#level2_boxes
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .box,.question_box{
    
@@ -181,8 +186,9 @@ border-radius: 20px;
     display: flex;
     flex-direction: column;
   
-    
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 .question_box{
     
@@ -201,6 +207,8 @@ p{
     margin-left: 10px;
     padding-left: 20px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding-top: 15px;
+    padding-bottom: 10px;
 
 }
 .para{
@@ -208,7 +216,7 @@ p{
     justify-content: center;
     font-size: 40px;
     font-weight: bold;
-   
+    margin-top: 30px;
 }
 .below_line{
   display: flex;
